@@ -1,25 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Box, Typography, TextField, Button, Snackbar, Alert } from '@mui/material';
 
 const AdminDashboard = () => {
-  // Mock data for admin stats (replace with API in real apps)
-  const stats = [
-    { label: 'Total Sales', value: '$10,000' },
-    { label: 'Products Sold', value: '150' },
-    { label: 'New Users', value: '25' },
-  ];
+  const [formData, setFormData] = useState({ name: '', price: '', description: '' });
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!formData.name || !formData.price || !formData.description) {
+      return;
+    }
+    console.log('New product:', formData);
+    setSnackbarOpen(true);
+    setFormData({ name: '', price: '', description: '' });
+  };
 
   return (
-    <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-6">Admin Dashboard</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {stats.map((stat, index) => (
-          <div key={index} className="border p-4 rounded shadow">
-            <h2 className="text-xl font-bold">{stat.label}</h2>
-            <p className="text-lg">{stat.value}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    <Box sx={{ p: 3, maxWidth: 600, mx: 'auto' }}>
+      <Typography variant="h4" gutterBottom textAlign="center">
+        Admin Dashboard
+      </Typography>
+      <Typography variant="h6" gutterBottom>
+        Add New Product
+      </Typography>
+      <form onSubmit={handleSubmit}>
+        <TextField
+          label="Product Name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          fullWidth
+          margin="normal"
+        />
+        <TextField
+          label="Price"
+          name="price"
+          type="number"
+          value={formData.price}
+          onChange={handleChange}
+          fullWidth
+          margin="normal"
+        />
+        <TextField
+          label="Description"
+          name="description"
+          value={formData.description}
+          onChange={handleChange}
+          fullWidth
+          margin="normal"
+          multiline
+          rows={3}
+        />
+        <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2 }}>
+          Add Product
+        </Button>
+      </form>
+      <Snackbar
+        open={snackbarOpen}
+        autoHideDuration={3000}
+        onClose={() => setSnackbarOpen(false)}
+      >
+        <Alert onClose={() => setSnackbarOpen(false)} severity="success">
+          Product added successfully! (Logged to console)
+        </Alert>
+      </Snackbar>
+    </Box>
   );
 };
 
