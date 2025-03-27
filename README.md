@@ -1,19 +1,31 @@
 # Online Shopping
+# Online Shopping
 
-A simple online shopping app that allows users to browse products, add them to a cart, and remove items from the cart.
+A simple online shopping app that allows users to browse products, view product details, add items to a cart, and manage the cart.
 
 ## Live Demo
-- **Vercel**: [Add Vercel URL]
+- **Vercel**: https://online-shopping-xyz.vercel.app
 
 ## Features
-- Browse a list of products with names, descriptions, and prices.
-- Add products to a shopping cart.
-- View the cart with a total price and remove items.
-- Responsive design with Material-UI.
+- Browse a list of products with names, descriptions, prices, and realistic images.
+- Animated product cards with fade-in and hover effects using Framer Motion.
+- View detailed product information on a separate page with a fade-in animation.
+- Add products to a shopping cart with custom quantities and remove items.
+- Confirmation prompt when adding products to the cart.
+- Persist cart items in local storage across page refreshes.
+- Clear the cart with a single button.
+- "Checkout" functionality with a confirmation message.
+- "Shop Now" banner on the Home page to encourage user engagement.
+- Admin dashboard to add new products (logs to console for now).
+- Responsive design with Material-UI and React Router for navigation.
+- Loading state for better user experience.
 
 ## Tech Stack
 - **Frontend**: React.js
 - **Styling**: Material-UI
+- **Animations**: Framer Motion
+- **Routing**: React Router
+- **State Management**: React Context API
 - **Build Tool**: Vite
 - **Deployment**: Vercel
 
