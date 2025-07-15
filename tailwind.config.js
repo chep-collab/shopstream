@@ -1,7 +1,9 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+
 module.exports = {
   content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",   // All React components and pages
+    "./public/index.html"           // Optional static HTML file
   ],
   theme: {
     extend: {},
