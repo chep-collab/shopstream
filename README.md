@@ -1,6 +1,3 @@
-Thanks for sharing, Mercy! I explored your `online-shopping` repo and saw it’s a **React + Tailwind CSS** project bootstrapped with Create React App. Let’s give it a polished README that highlights your frontend skills and sets the stage for future enhancements.
-
----
 
 ### 📝 Refined `README.md` for `online-shopping`
 
