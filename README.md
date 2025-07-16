@@ -1,34 +1,30 @@
 
-ShopStream is a modern, responsive e-commerce frontend built with **React** and **TypeScript**, designed to showcase products with beautiful UI animations, clean layout, and scalable code structure. It’s a solid starting point for a fullstack shopping platform.
+# 🛍️ ShopStream
 
-## 🌐 Live Demo
+ShopStream is a modern React + TypeScript e-commerce UI, designed to showcase products in a clean, responsive layout. Built with Tailwind CSS and animated with Framer Motion, it’s fast, intuitive, and ready for real-world scale.
 
+## 🌐 Live Demo  
 🔗 [shopstream-arn7.vercel.app](https://shopstream-arn7.vercel.app)
 
 ## ✨ Features
 
-- 🖼️ Product listings with pricing and descriptions
-- 💫 Smooth page transitions using Framer Motion
-- 🎨 Responsive design powered by Tailwind CSS
-- 🔥 Toast alerts and celebratory confetti effects
-- 🔗 SPA routing with React Router
-- ⚙️ Ready for Firebase integration (auth, database, etc.)
+- Product listings with prices and images
+- Smooth animations and page transitions
+- Responsive layout for desktop and mobile
+- Clean routing with React Router
+- Built with scalable component structure
+- Ready for backend integration (e.g. Firebase)
 
-## 🛠️ Tech Stack
+## ⚙️ Tech Stack
 
-- **React** + **TypeScript**
-- **Tailwind CSS** + **PostCSS**
-- **Framer Motion** (animations)
-- **Lucide Icons**
-- **Firebase** (installed, optional backend)
-
-## 📸 Screenshots
-
-*(Add screenshots here once you've taken some — UI, mobile view, etc.)*
+- React + TypeScript  
+- Tailwind CSS  
+- Framer Motion  
+- Lucide Icons  
+- React Router  
+- (Optional: Firebase setup ready)
 
 ## 🚀 Getting Started
-
-Clone and run locally:
 
 ```bash
 git clone https://github.com/chep-collab/shopstream.git
@@ -43,19 +39,23 @@ To build for production:
 npm run build
 ```
 
-## 📦 Deployment
-
-This project is deployed on **Vercel**. You can fork it and connect your own repo via [vercel.com](https://vercel.com).
-
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+MIT
 
 ## 👩‍💻 Author
 
-**Mercy Chepkemoi**  
-Frontend Developer & Portfolio Architect  
-🔗 [GitHub Profile](https://github.com/chep-collab)
+**Mercy Chepngeno 
+Frontend Developer  
+🌐 [GitHub Profile](https://github.com/chep-collab)
+
+
+
+> ShopStream is part of a growing portfolio that blends creative UI with frontend performance. Built for polish. Ready for scale.
+
+
+
+
 
 ---
 
